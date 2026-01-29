@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      color: white;
+    }
+    .container {
+      display: flex;
+      padding: 20px;
+    }
+    .form-section, .table-section {
+      flex: 1;
+      margin: 10px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    form label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    /* Decorative shapes */
+    .circle {
+      width: 50px;
+      height: 50px;
+      background: #3498db;
+      border-radius: 50%;
+      margin: 10px auto;
+    }
+    .rectangle {
+      width: 100px;
+      height: 50px;
+      background: #e74c3c;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Student Management Desktop</h1>
+  </header>
+  <nav>
+    Dashboard | Students | Courses | Reports
+  </nav>
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-section">
+      <h2>Add Student</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter student name">
+
+        <label for="roll">Roll Number:</label>
+        <input type="text" id="roll" placeholder="Enter roll number">
+
+        <label for="course">Course:</label>
+        <select id="course">
+          <option>Computer Science</option>
+          <option>Mathematics</option>
+          <option>Physics</option>
+          <option>Commerce</option>
+        </select>
+
+        <button type="submit">Add Student</button>
+      </form>
+      <!-- Shapes -->
+      <div class="circle"></div>
+      <div class="rectangle"></div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="table-section">
+      <h2>Student List</h2>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Roll Number</th>
+          <th>Course</th>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>101</td>
+          <td>Computer Science</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>102</td>
+          <td>Mathematics</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
